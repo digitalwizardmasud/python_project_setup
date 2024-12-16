@@ -1,5 +1,53 @@
 [
     {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "has_request_context",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "error",
+        "importPath": "utils.resp",
+        "description": "utils.resp",
+        "isExtraImport": true,
+        "detail": "utils.resp",
+        "documentation": {}
+    },
+    {
+        "label": "success",
+        "importPath": "utils.resp",
+        "description": "utils.resp",
+        "isExtraImport": true,
+        "detail": "utils.resp",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -17,14 +65,6 @@
         "documentation": {}
     },
     {
-        "label": "has_request_context",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
         "label": "app",
         "importPath": "app",
         "description": "app",
@@ -38,6 +78,33 @@
         "description": "flask_cors",
         "isExtraImport": true,
         "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "signin_route",
+        "kind": 2,
+        "importPath": "blueprints.auth_blueprint",
+        "description": "blueprints.auth_blueprint",
+        "peekOfCode": "def signin_route():\n    pass",
+        "detail": "blueprints.auth_blueprint",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "blueprints.auth_blueprint",
+        "description": "blueprints.auth_blueprint",
+        "peekOfCode": "app = Flask(__name__)\nauth_bp = Blueprint(\"auth\", __name__, url_prefix='/auth')\n@auth_bp.route('/signin', methods=['POST'])\ndef signin_route():\n    pass",
+        "detail": "blueprints.auth_blueprint",
+        "documentation": {}
+    },
+    {
+        "label": "auth_bp",
+        "kind": 5,
+        "importPath": "blueprints.auth_blueprint",
+        "description": "blueprints.auth_blueprint",
+        "peekOfCode": "auth_bp = Blueprint(\"auth\", __name__, url_prefix='/auth')\n@auth_bp.route('/signin', methods=['POST'])\ndef signin_route():\n    pass",
+        "detail": "blueprints.auth_blueprint",
         "documentation": {}
     },
     {
