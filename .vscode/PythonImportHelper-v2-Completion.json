@@ -1,0 +1,70 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "has_request_context",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "Validator",
+        "kind": 6,
+        "importPath": "db.validator",
+        "description": "db.validator",
+        "peekOfCode": "class Validator:\n    def __init__(self, schema):\n        self.schema = schema\n    def validate(self, data):\n        errors = []\n        for field, constraints in self.schema.items():\n            field_type = constraints.get('type')\n            required = constraints.get('required')\n            enum_values = constraints.get('enum')\n            if field in data:",
+        "detail": "db.validator",
+        "documentation": {}
+    },
+    {
+        "label": "success",
+        "kind": 2,
+        "importPath": "utils.resp",
+        "description": "utils.resp",
+        "peekOfCode": "def success(message, data=None, routes=[]):\n    return {\n        \"status\" : \"success\",\n        \"message\" : message,\n        \"data\" : data,\n        \"routes\": routes\n    }\ndef error(message, error_code=None, error_details=None, routes=[]):\n    return {\n        \"status\" : \"error\",",
+        "detail": "utils.resp",
+        "documentation": {}
+    },
+    {
+        "label": "error",
+        "kind": 2,
+        "importPath": "utils.resp",
+        "description": "utils.resp",
+        "peekOfCode": "def error(message, error_code=None, error_details=None, routes=[]):\n    return {\n        \"status\" : \"error\",\n        \"message\" : message,\n        \"error\" : {\n            \"code\" : error_code,\n            \"details\": error_details\n        },\n        \"routes\": routes\n    }",
+        "detail": "utils.resp",
+        "documentation": {}
+    }
+]
